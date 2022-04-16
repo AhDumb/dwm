@@ -38,6 +38,9 @@ dist: clean
 	gzip dwm-${VERSION}.tar
 	rm -rf dwm-${VERSION}
 
+rely:
+	yay -S alsa-utils feh libxft-bgra ttf-joypixels picom-jonaburg-git iw acpi
+
 install: all
 	mkdir -p ${DESTDIR}${PREFIX}/bin
 	cp -f dwm ${DESTDIR}${PREFIX}/bin
